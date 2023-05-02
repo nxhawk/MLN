@@ -27,7 +27,10 @@ Một vài thuật toán dùng để xây dựng cây quyết định thường 
   1. CART (Classification and Regression Trees) → dùng Gini Index(Classification) để kiểm tra.
   2. ID3 (Iterative Dichotomiser 3) → dùng Entropy function và Information gain để kiểm tra.
 
-### 3. Tài liệu tham khảo
+### 3. Dữ liệu dùng để xây dựng cây quyết định trong bài
+  [Kaggle dataset](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
+
+### 4. Tài liệu tham khảo
   [1. Entropy and Gini index](https://viblo.asia/p/cay-quyet-dinh-decision-tree-RnB5pXWJ5PG)
   </br>
   [2. Python Decision Tree Classification](https://www.datacamp.com/tutorial/decision-tree-classification-python)
