@@ -34,7 +34,8 @@ Một vài thuật toán dùng để xây dựng cây quyết định thường 
   [1. Entropy and Gini index](https://viblo.asia/p/cay-quyet-dinh-decision-tree-RnB5pXWJ5PG)
   </br>
   [2. Python Decision Tree Classification](https://www.datacamp.com/tutorial/decision-tree-classification-python)
-  
+  </br>
+  [3. Python | Decision tree implementation](https://www.geeksforgeeks.org/decision-tree-implementation-python)
   
   
   
