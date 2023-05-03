@@ -23,5 +23,3 @@ print("Shape matrix B:", b.shape)  # (2, 3) {b.shape[0] or b.shape[1]}
 
 # get Type
 print("Type", b.dtype)  # float64
-
-print(b*a)
