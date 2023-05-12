@@ -1,5 +1,5 @@
 from random import *
-from res.selection import *
+from res.parent_selection import *
 from res.crossovers import *
 from res.mutations import *
 
