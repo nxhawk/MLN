@@ -46,3 +46,5 @@ Nhìn vào thuyết tiến hóa của Hươu cao cổ này, chúng ta thấy đ�
 </br>
 [2. Learn Genetic Algorithm](https://www.tutorialspoint.com/genetic_algorithms/index.htm)
 </br>
+[3. Github](https://github.com/abdosharaf9/N-Queens-Project/tree/master)
+</br>
