@@ -13,7 +13,7 @@
 - `HIDDEN LAYER`: 10->20->10: node cho mỗi lớp, weight khởi tạo ngẫu nhiên (0->1), dùng hàm ReLU làm active function (fully connected layer)
 - `OUTPUTS`: gồm 3 node, đầu tiên dùng hàm softmax để đưa giá trị 3 node về dạng xác suất
 
-Max node in OUPUTS sẽ là kết quả dự đoán bước tiếp theo rắn nên đi (node 1: đi tiếp hướng cũ, node 2: rẽ trái, node 3: rẽ phải)
+Max node in OUTPUTS sẽ là kết quả dự đoán bước tiếp theo rắn nên đi (node 1: đi tiếp hướng cũ, node 2: rẽ trái, node 3: rẽ phải)
 
 # Genetic Algorithm
 Thay vì dùng `backpropagation` để tìm phương án tối ưu ta dùng thuật toán di truyền để tìm các weight tối ưu nhất cho mạng nơ-ron ở trên
