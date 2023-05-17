@@ -136,7 +136,6 @@ class NeuronNetwork:
         # hidden layer -> outputs
         output_o1 = self.os[0].feedforward(output_h, 'tanh')
         output_o2 = self.os[1].feedforward(output_h)
-
         return [output_o1, output_o2]
 
 
@@ -261,8 +260,8 @@ if __name__ == '__main__':
 
     # test Neuron Network
     network = NeuronNetwork()
-    inputs = [2, 3, 4]
-    # print(network.feedforward(inputs))
+    inputs = [20, 3, 4]
+    print(network.feedforward(inputs))
 
     # networks list, every item is a NeuralNetwork
     nets = []
@@ -294,4 +293,4 @@ if __name__ == '__main__':
     # mutate next generation's every network including elites
     next_gen_nets = mutate(next_gen_nets, 0.1, (0, 0.1))
 
-    print([net.hs[1].bias for net in next_gen_nets])
+    # print([net.hs[1].bias for net in next_gen_nets])
