@@ -16,15 +16,28 @@ classes = ['airplane', 'automobile', 'bird', 'cat',
 
 
 model_training_first = models.Sequential([
-    layers.Flatten(input_shape=(32, 32, 3)),  # 32x32(3 layer)
-    # 3072(input 32x32x3)->3000 -> 1000 -> 10 (output) NN
-    layers.Dense(3000, activation='relu'),
+    layers.Conv2D(32, (3, 3), input_shape=(32, 32, 3),
+                  activation='relu'),  # 32kernel, kernel size = 3
+    layers.MaxPool2D((2, 2)),
+    layers.Dropout(0.15),  # cat bo bot
+
+    layers.Conv2D(64, (3, 3), activation='relu'),  # 32kernel, kernel size = 3
+    layers.MaxPool2D((2, 2)),
+    layers.Dropout(0.2),
+
+    layers.Conv2D(128, (3, 3), activation='relu'),  # 32kernel, kernel size = 3
+    layers.MaxPool2D((2, 2)),
+    layers.Dropout(0.2),
+
+    layers.Flatten(),  # 32x32(3 layer)
+    # 3072(input 32x32x3)->1000 -> 256 -> 10 (output) NN
     layers.Dense(1000, activation='relu'),
+    layers.Dense(256, activation='relu'),
     layers.Dense(10, activation='softmax')
 ])  # Seqential như chuỗi các ô vuông nối tiếp nhau (flatten)
 
 model_training_first.compile(
-    optimizer='SGD', loss='categorical_crossentropy', metrics=['accuracy'])
+    optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 # opti: cập nhật lại , loss: mất mát,
 
 model_training_first.fit(Xtrain, ytrain, epochs=10)

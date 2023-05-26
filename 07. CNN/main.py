@@ -16,8 +16,14 @@ classes = ['airplane', 'automobile', 'bird', 'cat',
 
 models = models.load_model('model_cifar10.h5')
 
-pred = models.predict(Xtest[105].reshape((-1, 32, 32, 3)))
-print(pred)
-print(classes[np.argmax(pred)])
-plt.imshow(Xtest[105])
+np.random.shuffle(Xtest)
+
+for i in range(50):
+    plt.subplot(5, 10, i + 1)
+    plt.imshow(Xtest[i])
+    pred = models.predict(Xtest[i].reshape((-1, 32, 32, 3)))
+    pred = np.argmax(pred)
+    plt.title(classes[pred])
+    plt.axis('off')
+
 plt.show()
